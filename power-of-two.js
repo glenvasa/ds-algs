@@ -29,3 +29,15 @@ const isPowerOfTwo = (num) => {
 console.log(isPowerOfTwo(8));
 console.log(isPowerOfTwo(5));
 console.log(isPowerOfTwo(16));
+
+// Best case: number = 13 => O(1)
+// Worst Case: 1,000,000 => large number that can be divided several times by 2 but then eventually 
+// can not be divided by 2 => O(log n) ; not O(n) b/c we don't have anywhere close to n operations b/c 
+// the number is always divided by 2 and reduced significantly each iteration.
+// 1,000,000 would only require 7 executions
+
+//**** Actually the Worst case is not 1,000,000 it is a large number that is a power of 2 b/c 
+// that will require operations until dividedNumber eventually is 1 and returns true  */
+// Technically time complexity is O(2log n) => O(log n)
+
+//Average case: O(log n)
