@@ -9,6 +9,7 @@
 
 const adj = (str) => {
     let newStr = str.split('').sort()
+    // console.log(newStr);
     // checks if any letters appear more than once
     for(let i=0; i< newStr.length; i++){
         if (newStr[i] === newStr[i + 1]){
@@ -24,7 +25,7 @@ const adj = (str) => {
 
 
 
-console.log(adj('bcba')); //true
+console.log(adj('bcba')); //false b/c b appears twice
 // console.log(adj('abd')) // false;
 // console.log(adj('dabc')); // true
 // console.log(adj('abbc')); // false
